@@ -1,0 +1,34 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+	The diff view is condensed to those parts of the files that have been changed, so it is much easier to spot changes and find errors. Therefore, the bug was found almost instantly.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+	By having an ability to time-travel with the various versions of the same file I am better prepared to analyze my own work product and how it evolves within the development cycle. In the long run it will create healthier work habits where I would be getting used to a more reflective approach towards the results of my work.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+	The biggest advantage of committing manually is that it leads to a more meaningful commits. Therefore, you can analyze them more productively later on. The disadvantage is that the approach is prone to errors. Also, your forgetfulness may well play a bad trick on you if you do not commit on time and then lose your work for some reason (power outage, for example). 
+	Another advantage is having all the commits tagged. This way you can very quickly find the right commit, as opposed to the huge pile of meaningless stuff on Google docs.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+	The reason some version control systems, like Git, allow multiple files in one commit is that those systems are designed with programmers' needs in mind. In a typical programming setting changes introduced often encompass multiple related files. Therefore, to have a meaningful commit it is better to be able to commit all the files at a given point in time. This way we can be sure that we always have meaningful and workable commits of all the changes we make.
+
+How can you use the commands git log and git diff to view the history of files?
+
+	Git log gives the full picture of all the commits in time with a brief description of each and every commit. Git diff can further inform us about the particular changes that were introduced between the two stages that we compare when we apply diff. It lists all the changes and shows the exact positions of the changes within the files being compared.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+	The ability to roll back the whole project state for any number of stages is indeed very useful because this way I am protected from losing previous good work in case I make a mistake. That gives more freedom to try new things without regard to possibilities of errors. 
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+	The main purpose for me to study git is to be able to use it in real life projects. I will first use it while learning python. Then I will use it when experimenting with the website prototype I will be preparing for my new business project.
