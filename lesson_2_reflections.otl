@@ -1,14 +1,52 @@
 What happens when you initialize a repository? Why do you need to do it?
-	When I initialize a repository, git creates a hidden directory in the repository called .git. That hidden directory contains meta-data describing the state of the files in the repository. I need to do it to be able to track changes to the files in the repository.
-How is the staging area different from the working directory and the repository? What value do you think it offers?
-	The staging area is different from both repository and the working directory in that it is a sort of preliminary and temporary area. It separates those files we are going to commit from the rest of the files in the working directory. The value it offers is just that: to separate the files being prepared for a commit in order to enable us to review the changes before we finally commit them.
-How can you use the staging area to make sure you have one commit per logical change?
-	By having a possibility to revisit my changes within the staging area before I commit them I am better prepared to make weighted decisions on what to commit as a separate stage in the project development process. If in doubt, I can use git diff command to compare the staging area contents with the working directory and make sure the changes I am about to commit indeed represent a separate logical stage in the development of the project.
-What are some situations when branches would be helpful in keeping your history organized? How would branches help?
-	Every time the development of the project requires varied changes to be introduced, the branching feature of git comes in handy because it enables to keep the history of how the project evolves. For example, you can introduce changes to the functionality of the software and test the new version, while being able to continue polishing the main version of it. If the results of the test warrant the acceptance of the new functionality, you can merge the two branches. In all the outcomes, your history is kept clean and transparent.
+	When I initialize a repository, git creates a hidden directory in the
+	repository called .git. That hidden directory contains meta-data
+	describing the state of the files in the repository. I need to do it to be
+	able to track changes to the files in the repository.
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+	The staging area is different from both repository and the working
+	directory in that it is a sort of preliminary and temporary area. It
+	separates those files we are going to commit from the rest of the files in
+	the working directory. The value it offers is just that: to separate the
+	files being prepared for a commit in order to enable us to review the
+	changes before we finally commit them.
+How can you use the staging area to make sure you have one commit per logical
+change?
+	By having a possibility to revisit my changes within the staging area
+	before I commit them I am better prepared to make weighted decisions on
+	what to commit as a separate stage in the project development process. If
+	in doubt, I can use git diff command to compare the staging area contents
+	with the working directory and make sure the changes I am about to commit
+	indeed represent a separate logical stage in the development of the
+	project.
+What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+	Every time the development of the project requires varied changes to be
+	introduced, the branching feature of git comes in handy because it enables
+	to keep the history of how the project evolves. For example, you can
+	introduce changes to the functionality of the software and test the new
+	version, while being able to continue polishing the main version of it. If
+	the results of the test warrant the acceptance of the new functionality,
+	you can merge the two branches. In all the outcomes, your history is kept
+	clean and transparent.
 How do the diagrams help you visualize the branch structure?
-	By definition, a diagram is a visual representation of the process, in this case -- the project development process. Therefore, having project development diagrammed helps visualize that process by showing its various stages and branches in the form of lines branching from the main stem of the project.
-What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
-	In the diagram, we represent the merging of the two branches as the meeting of their outward-going ends. This means that their meeting point has tips of both branches as parents. Therefore, all the commits of both branches are accessible after the merging of the branches. The result of the merge is just that: the two merged branches have now become one and all the commits are now accessible from the tip of that new branch.	
-What are the pros and cons of Git's automatic merging vs. always  doing merges manually?
-	I frankly don't see any pros in favor of automatic merging. The reason is that the result of the automation would be unpredictable in most non-trivial cases. I am sure at the current state of affairs in the AI always doing the merges manually represents the only feasible option.
+	By definition, a diagram is a visual representation of the process, in
+	this case -- the project development process. Therefore, having project
+	development diagrammed helps visualize that process by showing its various
+	stages and branches in the form of lines branching from the main stem of
+	the project.
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+	In the diagram, we represent the merging of the two branches as the
+	meeting of their outward-going ends. This means that their meeting point
+	has tips of both branches as parents. Therefore, all the commits of both
+	branches are accessible after the merging of the branches. The result of
+	the merge is just that: the two merged branches have now become one and
+	all the commits are now accessible from the tip of that new branch.	
+What are the pros and cons of Git's automatic merging vs. always  doing merges
+manually?
+	I frankly don't see any pros in favor of automatic merging. The reason is
+	that the result of the automation would be unpredictable in most
+	non-trivial cases. I am sure at the current state of affairs in the AI
+	always doing the merges manually represents the only feasible option.
